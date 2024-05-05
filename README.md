@@ -33,7 +33,7 @@ Key combinations are categorized by mode, mode key combinations are divided into
 |   k           DOWN      |    alt = 
 |_________________________|
 |                         |
-|  a s d f => GRADUATION  |    alt + m = SWITCH MODE
+|  a>s>d>f => GRADUATION  |    alt + m = SWITCH MODE
 |_________________________|    n/m/l/h MODE CODES
 ```
 
@@ -87,6 +87,8 @@ Key combinations are categorized by mode, mode key combinations are divided into
 
 
 ## (N)avigate mode 👐🏻
+
+<img src="images/navigation_mode.png">
 
 ### Right hand
 - ``i`` - move cursor up
