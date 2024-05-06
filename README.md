@@ -48,7 +48,7 @@ Key combinations are categorized by mode, mode key combinations are divided into
 
 ## Edit mode ``by default``
 
-*There will be commands that are important to have on hand at all times*
+<img src="images/edit_mode.png">
 
 **Code managment**
 - ``ctrl + /`` - Comment/uncomment with line comment
@@ -75,7 +75,7 @@ Key combinations are categorized by mode, mode key combinations are divided into
 <!-- do collapsing -->
 
 <!-- Using breadcrupms  -->
-
+<!-- чтобы в навбаре была ещё буква, показывающая режим -->
 **General**
 - ``ctrl+s`` - save all
 - ``ctrl+alt+s`` - open settings
@@ -131,6 +131,7 @@ Key combinations are categorized by mode, mode key combinations are divided into
 
 
 ## (M)anage mode 👐🏻
+<img src="images/manage_mode.png">
 
 ### Right hand
 - ``i`` - select up
