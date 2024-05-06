@@ -155,6 +155,7 @@ Key combinations are categorized by mode, mode key combinations are divided into
 
 
 ## (L)ayout mode 👐🏻
+<img src="images/layout_mode.png">
 
 ### Right hand
 - ``l`` - toggles right panel
