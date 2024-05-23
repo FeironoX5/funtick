@@ -1,0 +1,102 @@
+{
+  "name": "funtick",
+  "displayName": "funtick",
+  "description": "LEAVE BLANK",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "funtick.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "keybindings":[
+        // ESCAPE
+        {
+            "command": "funtick.escape",
+            "key": "space",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)"
+        },
+        {
+            "command": "funtick.escape",
+            "key": "enter",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)"
+        },
+        {
+            "command": "funtick.escape",
+            "key": "escape",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)"
+        },
+        // SWITCHING MODES
+        {
+            "command": "funtick.switchMode",
+            "key": "ctrl+m",
+            "when": "funtick.init && editorTextFocus"
+        },
+        {
+            "command": "funtick.send",
+            "key": "n",
+            "when": "funtick.init && (editorTextFocus && funtick.switching_mode == 1)",
+            "args": "navigate"
+        },
+        {
+            "command": "funtick.send",
+            "key": "l",
+            "when": "funtick.init && (editorTextFocus && funtick.switching_mode == 1)",
+            "args": "layout"
+        },
+        // RIGHT HAND MOVES
+        {
+            "command": "funtick.send",
+            "key": "i",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)",
+            "args": "<i>"
+        },
+        {
+            "command": "funtick.send",
+            "key": "l",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)",
+            "args": "<l>"
+        },
+        {
+            "command": "funtick.send",
+            "key": "j",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)",
+            "args": "<j>"
+        },
+        {
+            "command": "funtick.send",
+            "key": "k",
+            "when": "funtick.init && (editorTextFocus && funtick.mode != EDIT)",
+            "args": "<k>"
+        }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
